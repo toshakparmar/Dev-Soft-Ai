@@ -10,7 +10,7 @@ import { Mic, Play, CircleStopIcon as Stop } from 'lucide-react';
 import Vapi from '@vapi-ai/web';
 import { isPublicKeyMissingError } from "../utils";
 
-
+// Environment variable for API key
 const vapi_api_key = import.meta.env.VITE_VAPI_API_KEY;
 const vapi = new Vapi(vapi_api_key);
 
@@ -25,7 +25,6 @@ const DeviAi = () => {
   const [connecting, setConnecting] = useState(false);
   const [connected, setConnected] = useState(false);
   const [assistantIsSpeaking, setAssistantIsSpeaking] = useState(false);
-  // const [conversationHistory, setConversationHistory] = useState([]);
   const [volumeLevel, setVolumeLevel] = useState(0);
   const [showPublicKeyInvalidMessage, setShowPublicKeyInvalidMessage] = useState(false);
 
@@ -42,14 +41,6 @@ const DeviAi = () => {
       setConnected(false);
       setShowPublicKeyInvalidMessage(false);
     });
-
-    // vapi.on("message-received", (message) => {
-    //   setConversationHistory((prev) => [...prev, { role: "AI", content: message }]);
-    // });
-
-    // vapi.on("message-sent", (message) => {
-    //   setConversationHistory((prev) => [...prev, { role: "User", content: message }]);
-    // });
 
     vapi.on("speech-start", () => {
       setAssistantIsSpeaking(true);
@@ -75,7 +66,10 @@ const DeviAi = () => {
   // Call start handler
   const startCallInline = () => {
     setConnecting(true);
-    vapi.start(assistantOptions);
+    vapi.start(assistantOptions).catch((error) => {
+      console.error("Error starting the call:", error);
+      setConnecting(false);
+    });
   };
 
   // Call end handler
@@ -111,10 +105,9 @@ const DeviAi = () => {
             with Devi-Ai, the open AI voice chat app.
           </p>
         </div>
-        <div className="relative w-full h-[30rem] lg:h-[40rem] xl:h-[50rem] 2xl:h-[60rem]">
 
-          <Canvas className="absolute w-full h-full z-10"
-            camera={{ position: [-2, 3, 5] }}>
+        <div className="relative w-full h-[30rem] lg:h-[40rem] xl:h-[50rem] 2xl:h-[60rem]">
+          <Canvas className="absolute w-full h-full z-10" camera={{ position: [-2, 3, 5] }}>
             <Suspense fallback={null}>
               <ambientLight intensity={0.5} />
               <directionalLight position={[10, 10, 5]} intensity={1} />
@@ -154,10 +147,17 @@ const DeviAi = () => {
           <BackgroundCircles />
         </div>
       </div>
+
+      {showPublicKeyInvalidMessage && (
+        <div className="absolute top-0 left-0 w-full p-4 bg-red-500 text-white text-center">
+          Invalid API Key. Please check your Vapi API key.
+        </div>
+      )}
     </Section>
   );
 };
 
+// Assistant Options
 const assistantOptions = {
   name: "Devi",
   firstMessage: "Hello, Toshak Sir, I am Devi, Your Communication Partner, Welcome to Dev-Soft, how can I help you?",
