@@ -35,6 +35,11 @@ import photoshop from "./collaboration/photoshop.png";
 import protopie from "./collaboration/protopie.png";
 import raindrop from "./collaboration/raindrop.png";
 import slack from "./collaboration/slack.png";
+import react from "./react.svg";
+import vapi from "./collaboration/vapi.png";
+import chatgpt from "./collaboration/chatgpt.png";
+import gsap from "./collaboration/gsap.png";
+import threejs from "./collaboration/threejs.png";
 
 import service1 from "./services/service-1.png";
 import service2 from "./services/service-2.png";
@@ -74,6 +79,9 @@ import facebook from "./socials/facebook.svg";
 import instagram from "./socials/instagram.svg";
 import telegram from "./socials/telegram.svg";
 import twitter from "./socials/twitter.svg";
+import linkedin from "./socials/linkedin.svg";
+
+import codesmachers from "./codesmachers-logo.svg";
 
 export {
   brainwave,
@@ -111,6 +119,11 @@ export {
   protopie,
   raindrop,
   slack,
+  react,
+  vapi,
+  chatgpt,
+  gsap,
+  threejs,
   service1,
   service2,
   service3,
@@ -144,4 +157,6 @@ export {
   instagram,
   telegram,
   twitter,
+  linkedin,
+  codesmachers,
 };
