@@ -34,8 +34,6 @@ This repository contains the code corresponding to an in-depth, But if you want 
 
 If you prefer visual learning, this is the perfect resource for you. Follow our tutorial to learn how to build projects like these step-by-step in a beginner-friendly manner!
 
-<a href="https://youtu.be/B91wc5dCEBA" target="_blank"><img src="https://github.com/sujatagunale/EasyRead/assets/151519281/1736fca5-a031-4854-8c09-bc110e3bc16d" /></a>
-
 ## <a name="introduction">🤖 Introduction</a>
 
 Dev-Soft - Modern UI/UX website, developed using React.js and Tailwind CSS, exemplifies modern UI/UX principles. Its sleek design, seamless animations, and overall user experience set a high standard, serving as a reference or inspiration for future modern applications or websites in general.
@@ -44,7 +42,7 @@ Dev-Soft - Modern Ai Assistant Devi which help you to solve your problems and in
 
 If you're getting started and need assistance or face any bugs, Sent the Direct Message to me with the help of Contact Page form. Then you will fill the form and put your query inside it.
 
-<a href="https://codesmachers.netlify.com" target="_blank"><img src="https://github.com/sujatagunale/EasyRead/assets/151519281/618f4872-1e10-42da-8213-1d69e486d02e" /></a>
+<a href="https://codesmachers.netlify.com" target="_blank">@CodeSmachers</a>
 
 ## <a name="tech-stack">⚙️ Tech Stack</a>
 
