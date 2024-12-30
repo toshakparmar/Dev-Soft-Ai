@@ -1,6 +1,6 @@
 <div align="center">
   <br />
-    <a href="https://youtu.be/B91wc5dCEBA" target="_blank">
+    <a href="#" target="_blank">
       <img src="https://i.ibb.co/Kqdv8j1/Image-from.png" alt="Project Banner">
     </a>
   <br />
@@ -11,10 +11,10 @@
     <img src="https://img.shields.io/badge/-Tailwind_CSS-black?style=for-the-badge&logoColor=white&logo=tailwindcss&color=06B6D4" alt="tailwindcss" />
   </div>
 
-  <h3 align="center">Modern UI/UX website</h3>
+  <h3 align="center">Dev-Soft (Ask Anything to Devi-Ai)</h3>
 
    <div align="center">
-     Build this project step by step with our detailed tutorial on <a href="https://www.youtube.com/@javascriptmastery/videos" target="_blank"><b>JavaScript Mastery</b></a> YouTube.
+     This is the Learning Platform with the help of Ai (Devi-Ai). You can ask anything to her, she will give you the relevent solution. In Future you can customize the Ai assistent as well.
     </div>
 </div>
 
@@ -30,7 +30,7 @@
 
 ## 🚨 Tutorial
 
-This repository contains the code corresponding to an in-depth tutorial available on our YouTube channel, <a href="https://www.youtube.com/@javascriptmastery/videos" target="_blank"><b>JavaScript Mastery</b></a>.
+This repository contains the code corresponding to an in-depth, But if you want to checkout the website click here- <a href="https://www.youtube.com/@javascriptmastery/videos" target="_blank"><b>Dev-Soft</b></a>.
 
 If you prefer visual learning, this is the perfect resource for you. Follow our tutorial to learn how to build projects like these step-by-step in a beginner-friendly manner!
 
@@ -38,17 +38,24 @@ If you prefer visual learning, this is the perfect resource for you. Follow our 
 
 ## <a name="introduction">🤖 Introduction</a>
 
-Brainwave - Modern UI/UX website, developed using React.js and Tailwind CSS, exemplifies modern UI/UX principles. Its sleek design, seamless animations, and overall user experience set a high standard, serving as a reference or inspiration for future modern applications or websites in general.
+Dev-Soft - Modern UI/UX website, developed using React.js and Tailwind CSS, exemplifies modern UI/UX principles. Its sleek design, seamless animations, and overall user experience set a high standard, serving as a reference or inspiration for future modern applications or websites in general.
 
-If you're getting started and need assistance or face any bugs, join our active Discord community with over 27k+ members. It's a place where people help each other out.
+Dev-Soft - Modern Ai Assistant Devi which help you to solve your problems and in future you can customize it according to you and your perference as well.
 
-<a href="https://discord.com/invite/n6EdbFJ" target="_blank"><img src="https://github.com/sujatagunale/EasyRead/assets/151519281/618f4872-1e10-42da-8213-1d69e486d02e" /></a>
+If you're getting started and need assistance or face any bugs, Sent the Direct Message to me with the help of Contact Page form. Then you will fill the form and put your query inside it.
+
+<a href="https://codesmachers.netlify.com" target="_blank"><img src="https://github.com/sujatagunale/EasyRead/assets/151519281/618f4872-1e10-42da-8213-1d69e486d02e" /></a>
 
 ## <a name="tech-stack">⚙️ Tech Stack</a>
 
 - Vite
 - React.js
 - Tailwind CSS
+- Vapi Ai
+- Three Js
+- Gsap
+- Email Sender
+- More...
 
 ## <a name="features">🔋 Features</a>
 
@@ -66,6 +73,11 @@ If you're getting started and need assistance or face any bugs, join our active 
 
 and many more, including code architecture and reusability
 
+👉 **Voice Assistant**: Devi which capable to assist you and solve any issue you face and you can ask anything
+to her.
+
+👉 **3d Model**: We add the 3d Model inside this Project, you can definetly checkout our webside Dev-Soft at Once.
+
 ## <a name="quick-start">🤸 Quick Start</a>
 
 Follow these steps to set up the project locally on your machine.
@@ -81,8 +93,8 @@ Make sure you have the following installed on your machine:
 **Cloning the Repository**
 
 ```bash
-git clone https://github.com/JavaScript-Mastery-Pro/brainwave.git
-cd brainwave
+git clone https://github.com/toshakparmar/Dev-Soft-Ai.git
+cd Dev-Soft-Ai
 ```
 
 **Installation**
@@ -104,31 +116,44 @@ Open [http://localhost:5173](http://localhost:5173) in your browser to view the 
 ## <a name="snippets">🕸️ Snippets</a>
 
 <details>
-<summary><code>.vscode/settings.json</code></summary>
+<summary><code>package.json</code></summary>
 
 ```json
 {
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "editor.formatOnSave": true,
-  "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": "explicit",
-    "source.addMissingImports": "explicit"
+  "name": "dev-soft",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
+    "preview": "vite preview"
   },
-  "prettier.tabWidth": 2,
-  "prettier.useTabs": false,
-  "prettier.semi": true,
-  "prettier.singleQuote": false,
-  "prettier.jsxSingleQuote": false,
-  "prettier.trailingComma": "es5",
-  "prettier.arrowParens": "always",
-  "[javascriptreact]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  "dependencies": {
+    "@react-three/drei": "^9.120.4",
+    "@react-three/fiber": "^8.17.10",
+    "@vapi-ai/web": "^2.1.8",
+    "lucide-react": "^0.469.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-just-parallax": "^3.1.16",
+    "react-router-dom": "^6.22.1",
+    "scroll-lock": "^2.1.5",
+    "three": "^0.171.0"
   },
-  "[css]": {
-    "editor.defaultFormatter": "vscode.css-language-features"
-  },
-  "[svg]": {
-    "editor.defaultFormatter": "jock.svg"
+  "devDependencies": {
+    "@types/react": "^18.2.55",
+    "@types/react-dom": "^18.2.19",
+    "@vitejs/plugin-react": "^4.2.1",
+    "autoprefixer": "^10.4.17",
+    "eslint": "^8.56.0",
+    "eslint-plugin-react": "^7.33.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.5",
+    "postcss": "^8.4.35",
+    "tailwindcss": "^3.4.1",
+    "vite": "^5.1.0"
   }
 }
 ```
@@ -397,7 +422,11 @@ import {
   facebook,
   figma,
   file02,
-  framer,
+  react,
+  vapi,
+  chatgpt,
+  gsap,
+  threejs,
   homeSmile,
   instagram,
   notification2,
@@ -419,14 +448,20 @@ import {
   sliders04,
   telegram,
   twitter,
+  linkedin,
   yourlogo,
-} from "../../public/assets";
+} from "../assets";
 
 export const navigation = [
   {
     id: "0",
-    title: "Features",
-    url: "#features",
+    title: "Devi Ai",
+    url: "#devi-ai",
+  },
+  {
+    id: "0",
+    title: "Devi Books",
+    url: "#devi-books",
   },
   {
     id: "1",
@@ -445,15 +480,8 @@ export const navigation = [
   },
   {
     id: "4",
-    title: "New account",
-    url: "#signup",
-    onlyMobile: true,
-  },
-  {
-    id: "5",
-    title: "Sign in",
-    url: "#login",
-    onlyMobile: true,
+    title: "Contact",
+    url: "#contact",
   },
 ];
 
@@ -461,12 +489,18 @@ export const heroIcons = [homeSmile, file02, searchMd, plusSquare];
 
 export const notificationImages = [notification4, notification3, notification2];
 
-export const companyLogos = [yourlogo, yourlogo, yourlogo, yourlogo, yourlogo];
+export const companyLogos = [
+  "https://pricesenz.com/wp-content/uploads/2024/01/chatgpt-logo.png",
+  "https://vectorseek.com/wp-content/uploads/2023/12/Google-Gemini-Logo-Vector.svg-.png",
+  "https://user-images.githubusercontent.com/4573851/226388344-20f2e01d-1594-4d3c-83e9-502868782445.png",
+  "https://vapi.ai/assets/logo-6813a1b5.png",
+  "https://cdn.freelogovectors.net/wp-content/uploads/2023/12/google-bard_logo-freelogovectors.net_.png",
+];
 
 export const brainwaveServices = [
-  "Photo generating",
-  "Photo enhance",
-  "Seamless Integration",
+  "Explain Any Topic/Concept",
+  "Answer your Questions",
+  "Communicate with you",
 ];
 
 export const brainwaveServicesIcons = [
@@ -482,7 +516,7 @@ export const roadmap = [
     id: "0",
     title: "Voice recognition",
     text: "Enable the chatbot to understand and respond to voice commands, making it easier for users to interact with the app hands-free.",
-    date: "May 2023",
+    date: "Oct 2024",
     status: "done",
     imageUrl: roadmap1,
     colorful: true,
@@ -491,7 +525,7 @@ export const roadmap = [
     id: "1",
     title: "Gamification",
     text: "Add game-like elements, such as badges or leaderboards, to incentivize users to engage with the chatbot more frequently.",
-    date: "May 2023",
+    date: "Oct 2024",
     status: "progress",
     imageUrl: roadmap2,
   },
@@ -499,88 +533,88 @@ export const roadmap = [
     id: "2",
     title: "Chatbot customization",
     text: "Allow users to customize the chatbot's appearance and behavior, making it more engaging and fun to interact with.",
-    date: "May 2023",
-    status: "done",
+    date: "Oct 2024",
+    status: "progress",
     imageUrl: roadmap3,
   },
   {
     id: "3",
     title: "Integration with APIs",
     text: "Allow the chatbot to access external data sources, such as weather APIs or news APIs, to provide more relevant recommendations.",
-    date: "May 2023",
+    date: "Oct 2024",
     status: "progress",
     imageUrl: roadmap4,
   },
 ];
 
 export const collabText =
-  "With smart automation and top-notch security, it's the perfect solution for teams looking to work smarter.";
+  "With smart solutions and top-notch response, it's the perfect solution for teams looking to work smarter.";
 
 export const collabContent = [
   {
     id: "0",
-    title: "Seamless Integration",
+    title: "Seamless Talking",
     text: collabText,
   },
   {
     id: "1",
-    title: "Smart Automation",
+    title: "Smart Solutions",
   },
   {
     id: "2",
-    title: "Top-notch Security",
+    title: "Top-notch Response",
   },
 ];
 
 export const collabApps = [
   {
     id: "0",
-    title: "Figma",
-    icon: figma,
+    title: "Vapi Ai",
+    icon: vapi,
     width: 26,
     height: 36,
   },
   {
     id: "1",
-    title: "Notion",
-    icon: notion,
-    width: 34,
-    height: 36,
-  },
-  {
-    id: "2",
-    title: "Discord",
-    icon: discord,
+    title: "Chatgpt 4.0",
+    icon: chatgpt,
     width: 36,
     height: 28,
   },
   {
-    id: "3",
-    title: "Slack",
-    icon: slack,
+    id: "2",
+    title: "React",
+    icon: react,
     width: 34,
     height: 35,
   },
   {
+    id: "3",
+    title: "Gsap",
+    icon: gsap,
+    width: 34,
+    height: 34,
+  },
+  {
     id: "4",
-    title: "Photoshop",
-    icon: photoshop,
+    title: "Three Js",
+    icon: threejs,
     width: 34,
     height: 34,
   },
   {
     id: "5",
-    title: "Protopie",
-    icon: protopie,
-    width: 34,
+    title: "Figma",
+    icon: figma,
+    width: 26,
     height: 34,
   },
   {
     id: "6",
-    title: "Framer",
-    icon: framer,
-    width: 26,
-    height: 34,
+    title: "Discord",
+    icon: discord,
+    width: 38,
+    height: 32,
   },
   {
     id: "7",
@@ -595,10 +629,10 @@ export const pricing = [
   {
     id: "0",
     title: "Basic",
-    description: "AI chatbot, personalized recommendations",
+    description: "AI voice chatbot, personalized recommendations",
     price: "0",
     features: [
-      "An AI chatbot that can understand your queries",
+      "An AI voice chatbot that can understand your queries",
       "Personalized recommendations based on your preferences",
       "Ability to explore the app and its features without any cost",
     ],
@@ -606,10 +640,11 @@ export const pricing = [
   {
     id: "1",
     title: "Premium",
-    description: "Advanced AI chatbot, priority support, analytics dashboard",
+    description:
+      "Advanced AI voice chatbot, priority support, analytics dashboard",
     price: "9.99",
     features: [
-      "An advanced AI chatbot that can understand complex queries",
+      "An advanced AI voice chatbot that can understand complex queries",
       "An analytics dashboard to track your conversations",
       "Priority support to solve issues quickly",
     ],
@@ -617,10 +652,11 @@ export const pricing = [
   {
     id: "2",
     title: "Enterprise",
-    description: "Custom AI chatbot, advanced analytics, dedicated account",
+    description:
+      "Custom AI voice chatbot, advanced analytics, dedicated account",
     price: null,
     features: [
-      "An AI chatbot that can understand your queries",
+      "An AI voice chatbot that can understand your queries",
       "Personalized recommendations based on your preferences",
       "Ability to explore the app and its features without any cost",
     ],
@@ -630,51 +666,51 @@ export const pricing = [
 export const benefits = [
   {
     id: "0",
-    title: "Ask anything",
-    text: "Lets users quickly find answers to their questions without having to search through multiple sources.",
-    backgroundUrl: "assets/benefits/card-1.svg",
+    title: "The Art of Communication",
+    text: "This book explores the principles of effective communication, including verbal and non-verbal techniques, helping you succeed in both personal and professional settings.",
+    backgroundUrl: "./src/assets/benefits/card-1.svg",
     iconUrl: benefitIcon1,
     imageUrl: benefitImage2,
   },
   {
     id: "1",
-    title: "Improve everyday",
-    text: "The app uses natural language processing to understand user queries and provide accurate and relevant responses.",
-    backgroundUrl: "assets/benefits/card-2.svg",
+    title: "Leadership Essentials",
+    text: "Learn how to lead effectively with strategies for team management, decision-making, and conflict resolution.",
+    backgroundUrl: "./src/assets/benefits/card-2.svg",
     iconUrl: benefitIcon2,
     imageUrl: benefitImage2,
     light: true,
   },
   {
     id: "2",
-    title: "Connect everywhere",
-    text: "Connect with the AI chatbot from anywhere, on any device, making it more accessible and convenient.",
-    backgroundUrl: "assets/benefits/card-3.svg",
+    title: "Emotional Intelligence",
+    text: "This book provides insights into understanding and managing emotions, fostering better interpersonal relationships and workplace productivity.",
+    backgroundUrl: "./src/assets/benefits/card-3.svg",
     iconUrl: benefitIcon3,
     imageUrl: benefitImage2,
   },
   {
     id: "3",
-    title: "Fast responding",
-    text: "Lets users quickly find answers to their questions without having to search through multiple sources.",
-    backgroundUrl: "assets/benefits/card-4.svg",
+    title: "Public Speaking Mastery",
+    text: "A comprehensive guide to improving public speaking skills, from overcoming stage fright to delivering compelling presentations.",
+    backgroundUrl: "./src/assets/benefits/card-4.svg",
     iconUrl: benefitIcon4,
     imageUrl: benefitImage2,
     light: true,
   },
   {
     id: "4",
-    title: "Ask anything",
-    text: "Lets users quickly find answers to their questions without having to search through multiple sources.",
-    backgroundUrl: "assets/benefits/card-5.svg",
+    title: "Conflict Resolution Techniques",
+    text: "This book offers practical techniques for resolving workplace conflicts and fostering a harmonious work environment.",
+    backgroundUrl: "./src/assets/benefits/card-5.svg",
     iconUrl: benefitIcon1,
     imageUrl: benefitImage2,
   },
   {
     id: "5",
-    title: "Improve everyday",
-    text: "The app uses natural language processing to understand user queries and provide accurate and relevant responses.",
-    backgroundUrl: "assets/benefits/card-6.svg",
+    title: "Effective Negotiation Strategies",
+    text: "Discover proven strategies for successful negotiations in business settings, ensuring mutually beneficial outcomes.",
+    backgroundUrl: "./src/assets/benefits/card-6.svg",
     iconUrl: benefitIcon2,
     imageUrl: benefitImage2,
   },
@@ -707,6 +743,12 @@ export const socials = [
   },
   {
     id: "4",
+    title: "Linkdin",
+    iconUrl: linkedin,
+    url: "#",
+  },
+  {
+    id: "5",
     title: "Facebook",
     iconUrl: facebook,
     url: "#",
@@ -720,7 +762,7 @@ export const socials = [
 <summary><code>components/Section.jsx</code></summary>
 
 ```javascript
-import SectionSvg from "../../public/assets/svg/SectionSvg";
+import SectionSvg from "../assets/svg/SectionSvg";
 
 const Section = ({
   className,
@@ -729,32 +771,36 @@ const Section = ({
   crossesOffset,
   customPaddings,
   children,
-}) => (
-  <div
-    id={id}
-    className={`relative 
-    ${
-      customPaddings ||
-      `py-10 lg:py-16 xl:py-20 ${crosses ? "lg:py-32 xl:py-40" : ""}`
-    } ${className || ""}`}
-  >
-    {children}
+}) => {
+  return (
+    <div
+      id={id}
+      className={`
+      relative 
+      ${
+        customPaddings ||
+        `py-10 lg:py-16 xl:py-20 ${crosses ? "lg:py-32 xl:py-40" : ""}`
+      } 
+      ${className || ""}`}
+    >
+      {children}
 
-    <div className="hidden absolute top-0 left-5 w-0.25 h-full bg-stroke-1 pointer-events-none md:block lg:left-7.5 xl:left-10" />
-    <div className="hidden absolute top-0 right-5 w-0.25 h-full bg-stroke-1 pointer-events-none md:block lg:right-7.5 xl:right-10" />
+      <div className="hidden absolute top-0 left-5 w-0.25 h-full bg-stroke-1 pointer-events-none md:block lg:left-7.5 xl:left-10" />
+      <div className="hidden absolute top-0 right-5 w-0.25 h-full bg-stroke-1 pointer-events-none md:block lg:right-7.5 xl:right-10" />
 
-    {crosses && (
-      <>
-        <div
-          className={`hidden absolute top-0 left-7.5 right-7.5 h-0.25 bg-stroke-1 ${
-            crossesOffset && crossesOffset
-          } pointer-events-none lg:block xl:left-10 right-10`}
-        />
-        <SectionSvg crossesOffset={crossesOffset} />
-      </>
-    )}
-  </div>
-);
+      {crosses && (
+        <>
+          <div
+            className={`hidden absolute top-0 left-7.5 right-7.5 h-0.25 bg-stroke-1 ${
+              crossesOffset && crossesOffset
+            } pointer-events-none lg:block xl:left-10 right-10`}
+          />
+          <SectionSvg crossesOffset={crossesOffset} />
+        </>
+      )}
+    </div>
+  );
+};
 
 export default Section;
 ```
@@ -768,9 +814,9 @@ export default Section;
 import Button from "./Button";
 import Heading from "./Heading";
 import Section from "./Section";
-import Tagline from "./TagLine";
+import Tagline from "./Tagline";
 import { roadmap } from "../constants";
-import { check2, grid, loading1 } from "../../public/assets";
+import { check2, grid, loading1 } from "../assets";
 import { Gradient } from "./design/Roadmap";
 
 const Roadmap = () => (
@@ -836,7 +882,7 @@ const Roadmap = () => (
       </div>
 
       <div className="flex justify-center mt-12 md:mt-15 xl:mt-20">
-        <Button href="/roadmap">Our roadmap</Button>
+        <Button href="#pricing">Join us</Button>
       </div>
     </div>
   </Section>
@@ -849,17 +895,6 @@ export default Roadmap;
 
 ## <a name="links">🔗 Links</a>
 
-- [Assets](https://drive.google.com/file/d/1JKzwPl_hnpjIlNbwfjMagb4HosxnyXbf/view?usp=sharing)
-- [Design](https://drive.google.com/file/d/15WJMOchujvaQ7Kg9e0nGeGR7G7JOeX1K/view?usp=sharing)
-- [Absolute Relative Positioning](https://css-tricks.com/absolute-positioning-inside-relative-positioning/)
 - [Live Website](https://jsm-brainwave.com/)
 
-## <a name="more">🚀 More</a>
-
-**Advance your skills with Next.js Pro Course**
-
-Enjoyed creating this project? Dive deeper into our PRO courses for a richer learning experience. They're packed with detailed explanations, cool features, and exercises to boost your skills. Give it a go!
-
-<a href="https://www.jsmastery.pro/ultimate-next-course" target="_blank">
-<img src="https://i.ibb.co/804sPK6/Image-720.png" alt="Project Banner">
 </a>
